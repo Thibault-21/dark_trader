@@ -11,7 +11,7 @@ page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
 def scraping(page)
  # Scraping des symboles de cryptos
  currencies_scrap = page.xpath('//td[contains(concat(" ",normalize-space(@class)," "), " col-symbol ")]')
- currencies = currencies_scrap.map { |currency| currency.text.strip } 
+ currencies = currencies_scrap.map { |currency| currency.text.strip } #strip sert à regrouper lorsqu'il y a des caractères vides
  # Scraping des valeurs de cryptos
  values_scrap = page.xpath('//a[contains(concat(" ",normalize-space(@class)," "), " price ")]')
  values = values_scrap.map { |value| value.text.delete("$").to_f } # retirer le symbole $ text.delete; pour le convertir, on utilise le float pour avoir un nombre numérique, décimal.
