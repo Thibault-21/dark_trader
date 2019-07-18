@@ -16,6 +16,6 @@ def scrapping(page)
         val_oise_emails << elem.text
     end
 
-    page.xpath('//td[contains(@class, "lientxt")]').each do |elem|
+    page.xpath('//a[contains(@class, "lientxt")]').each do |elem|
         val_oise_ville << elem.text 
     end
