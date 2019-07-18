@@ -15,7 +15,7 @@ def scraping(page)
         price_scrap << elem.text.delete("$").to_f
     end
 
-    page.xpath('//td[contains(@class, "text-left col-symbol")]').each do |elem|
+    page.xpath('//tr//td[contains(text(),"@")]').text")]').each do |elem|
         symbol_scrap << elem.text
     end
     
