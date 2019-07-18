@@ -30,21 +30,7 @@ def get_townhall_email(townhall_urls)
   
   get_townhall_email(get_townhall_urls)
    
-  # Différents XPath d'emails
-  # email_scrap = page.xpath('/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]')
-  # email_scrap_other = page.xpath('//tr//td[contains(text(),"@")]')
-  
-  # Restructuration des noms de villes 
-  # a = ["ABLEIGES - 95450", "ROUBAIX - 150000"]
-  # a.map {|commune| puts commune.capitalize.split.take(1).join.inspect }
-   
-  # Différents XPath d'emails
-  # email_scrap = page.xpath('/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]')
-  # email_scrap_other = page.xpath('//tr//td[contains(text(),"@")]')
-  
-  # Restructuration des noms de villes 
-  # a = ["ABLEIGES - 95450", "ROUBAIX - 150000"]
-  # a.map {|commune| puts commune.capitalize.split.take(1).join.inspect }
+ 
 
 
 
