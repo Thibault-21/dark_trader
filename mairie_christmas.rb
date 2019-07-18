@@ -14,6 +14,7 @@ def get_townhall_email(townhall_urls)
     
     townhall_name = townhall_name_raw.map { |town| town.capitalize.split.take(1).join}
     
+    #on mixe les deux array 
     h = Hash[townhall_name.zip(townhall_email)]
     result = [h.each {|k,v| Hash[k => v] }]
     puts result.inspect
