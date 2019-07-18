@@ -1,10 +1,9 @@
-require 'rubygems'
-require 'nokogiri'
-require 'open-uri'
+# require 'nokogiri'
+# require 'open-uri'
 
-   page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
+#    page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
 ----------------------------------------------
-   require 'nokogiri'
+require 'nokogiri'
 require 'open-uri'
 
 page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
@@ -28,33 +27,27 @@ scraping(page)
 
 -------------
 
-   crypto_currencies = Array.new #tout le tableau des cryptos
-# crypto_currencies //*[@id="currencies"]
-    currencies = page.xpath('//tbody/a')
+#    crypto_currencies = Array.new #tout le tableau des cryptos
+# # crypto_currencies //*[@id="currencies"]
+#     currencies = page.xpath('//tbody/a')
 
-    # code xpath du nom bitcoin 
-   crypto_names = Array.new
-   crypto_names //*[@id="th-name"]
+#     # code xpath du nom bitcoin 
+#    crypto_names = Array.new
+#    crypto_names //*[@id="th-name"]
 
-   #nom du fournisseur (BTC)
-   crypto-names = Array.new
-   crypto_names //*[@id="th-totalsupply"]
+#    #nom du fournisseur (BTC)
+#    crypto-names = Array.new
+#    crypto_names //*[@id="th-totalsupply"]
    
-    # code xpath du prix du bitcoin 
-   crypto_cours = Array.new 
-   crypto_cours //*[@id="th-price"]
-
-     
-   
-
-
-
+#     # code xpath du prix du bitcoin 
+#    crypto_cours = Array.new 
+#    crypto_cours //*[@id="th-price"]
 
 =begin
    page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
    all_emails_links = page.xpath('//a')
    puts el.text
-=end
+
 #    //*[@id="wikiArticle"]/div/a[1] 
 # end
 # begin
@@ -70,3 +63,4 @@ a = [
   { "ETH" => 217.34 }, 
   etc
 ]
+=end
