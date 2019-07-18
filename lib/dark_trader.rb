@@ -1,17 +1,22 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
-#example 
-# page = Nokogiri::HTML(open('http://en.wikipedia.org/wiki/HTML'))
-# page.css('div#content div#bodyContent table.infobox tr th').each do |el|
-#    puts el.text
-#cas concret 
-   page = Nokogiri::HTML(open('https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/4?locale=fr'))
+
+   page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
+    a = [
+        { }
+     ]
+
+
+
+
+=begin
+   page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
    all_emails_links = page.xpath('//a')
    puts el.text
-
-   //*[@id="wikiArticle"]/div/a[1] 
-end
+=end
+#    //*[@id="wikiArticle"]/div/a[1] 
+# end
 # begin
 #     # Any exceptions in here... 
 #     1/0
