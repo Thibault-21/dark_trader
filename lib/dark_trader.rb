@@ -3,7 +3,9 @@ require 'nokogiri'
 require 'open-uri'
 
    page = Nokogiri::HTML(open('https://www.https://coinmarketcap.com/all/views/all/'))
-    a = [
+   crypto_names = Array.new
+   
+   a = [
         { }
      ]
 
