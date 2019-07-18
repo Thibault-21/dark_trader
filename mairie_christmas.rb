@@ -12,7 +12,7 @@ val_oise_ville = Array.new
 
 def town_hall(page) 
 
-    page.xpath('//a[contains(@href, "mailto")]')).each do |elem|
+    page.xpath('//tr//td[contains(text(),"@")]').text }.each do |elem|
         val_oise_emails << elem.text
     end
 
