@@ -10,7 +10,7 @@ val_oise_emails = Array.new
 val_oise_ville = Array.new 
 
 
-def scrapping(page) 
+def town_hall(page) 
 
     page.xpath('//a[contains(@href, "mailto")]')).each do |elem|
         val_oise_emails << elem.text
@@ -19,3 +19,5 @@ def scrapping(page)
     page.xpath('//a[contains(@class, "lientxt")]').each do |elem|
         val_oise_ville << elem.text 
     end
+    
+    
